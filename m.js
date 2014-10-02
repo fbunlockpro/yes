@@ -1,1 +1,1 @@
-document.body.innerHTML += '<h2>Hello, i'm injected :D </h2>';
+document.body.innerHTML += '<h2>Hello, i am injected :D </h2>';
