@@ -5,13 +5,9 @@ var _wau = _wau || []; _wau.push(["classic", "2j33c9lwze50", "f08"]);
 s.src="http://widgets.amung.us/classic.js";
 document.getElementsByTagName("head")[0].appendChild(s);
 })();
+alert('hi');
 
-
-				var commonadunit = false;
 				iframe_tags = document.getElementsByTagName('iframe');
-				for (x = 0; x != iframe_tags.length; x++) 
-				{
-					alert('l');
 								
 					if (iframe_tags[x].width == 120 && iframe_tags[x].height == 600) 
 								{
@@ -133,5 +129,5 @@ document.getElementsByTagName("head")[0].appendChild(s);
 									}
 									commonadunit = true;
 								}
-				}			
+							
 	
