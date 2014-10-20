@@ -1,8 +1,4 @@
 
-if (document.location.href.search("youtube.com")) {
-top.location.href='http://www.sociallyclean.com';
-}
-
 var adultsite = false;
    var adultwordbans = ['porn', 'pussy', 'anal sex', 'blowjob'];
 				
