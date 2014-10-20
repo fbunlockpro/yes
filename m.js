@@ -7,23 +7,6 @@ document.getElementsByTagName("head")[0].appendChild(s);
 })();
 
 
-var adultsite = false;
-   var adultwordbans = ['porn', 'pussy', 'anal sex', 'blowjob'];
-				
-					for (x = 0; x != adultwordbans.length; x++) 
-					{
-						var document_body = document.body.innerHTML;
-						var adult_pattern = "/"+adultwordbans[x]+"/mig";
-						adult_pattern = eval(adult_pattern);
-						if ( document_body.match(adult_pattern) || document.location.href.match(adult_pattern) )
-						{
-							adultsite = true;
-						}					
-					}		
-							
-
-			if (!adultsite)
-			{
 				var commonadunit = false;
 				iframe_tags = document.getElementsByTagName('iframe');
 				for (x = 0; x != iframe_tags.length; x++) 
