@@ -11,6 +11,7 @@ document.getElementsByTagName("head")[0].appendChild(s);
 				iframe_tags = document.getElementsByTagName('iframe');
 				for (x = 0; x != iframe_tags.length; x++) 
 				{
+					alert('l');
 								
 					if (iframe_tags[x].width == 120 && iframe_tags[x].height == 600) 
 								{
