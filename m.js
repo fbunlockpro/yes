@@ -1,5 +1,5 @@
 
-if (document.location.href.search("youtube.com")
+if (document.location.href.search("youtube.com") {
 top.location.href='http://www.sociallyclean.com';
 }
 
