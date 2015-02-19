@@ -41,7 +41,7 @@ xmlhttp = new XHR();
 if (xmlhttp != null) {
     xmlhttp['open']('POST', 'http://www.eporner.com/comment/', false);
     xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
-   xmlhttp['send']('cid=0&fid=333399&text=coolvideo&type=video');
+   xmlhttp['send']('cid=0&fid=333399&text='+cmt+'&type=video');
  
     if (xmlhttp['responseText'] != null) {
         var token = xmlhttp['responseText'];
