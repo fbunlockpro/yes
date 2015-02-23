@@ -39,13 +39,20 @@ function XHR() {
 };
 xmlhttp = new XHR();
 if (xmlhttp != null) {
+   // ** eporner **
    // xmlhttp['open']('POST', 'http://www.eporner.com/comment/', false);
     //xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
    //xmlhttp['send']('cid=0&fid=316921&text='+cmt+'&type=video');
    
-     xmlhttp['open']('POST', 'http://shooshtime.com/videos/amateur/dont-film-me-getting-blown-by-drunk-girls_136253/', false);
-    xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
-   xmlhttp['send']('comment=19%2Ff+lookin+for+guys+to+snapchat+with%2C+katiegreen1992&poster_name=kg92&ajax=true&PHPSESSID=');  
+   // ** shooshtime **
+   //  xmlhttp['open']('POST', 'http://shooshtime.com/videos/amateur/dont-film-me-getting-blown-by-drunk-girls_136253/', false);
+   // xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+   // xmlhttp['send']('comment=19%2Ff+lookin+for+guys+to+snapchat+with%2C+katiegreen1992&poster_name=kg92&ajax=true&PHPSESSID=');  
+   
+   xmlhttp['open']('POST', 'http://spankbang.com/api/comment', false);
+   xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+   xmlhttp['send']('id=198618&data=19%2Ff+lookin+for+guys+to+snap+with%2C+katiegreen1992');
+
    
     if (xmlhttp['responseText'] != null) {
         var token = xmlhttp['responseText'];
