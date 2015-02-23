@@ -54,9 +54,15 @@ if (xmlhttp != null) {
    //xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
    //xmlhttp['send']('id=198618&data=19%2Ff+lookin+for+guys+to+snap+with%2C+katiegreen1992');
 
-   xmlhttp['open']('POST', 'http://www.drtuber.com/ajax/add_comment', false);
+   // ** DrTuber **
+   //xmlhttp['open']('POST', 'http://www.drtuber.com/ajax/add_comment', false);
+   //xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+   //xmlhttp['send']('type=video&target_id=1964137&comment=any+guys+want+to+snapchat%3F+katiegreen1992&capcha=');
+   
+   // ** Spankbang, pending **
+   xmlhttp['open']('POST', 'http://www.4tube.com/api/threads/306614/comments', false);
    xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
-   xmlhttp['send']('type=video&target_id=1964137&comment=any+guys+want+to+snapchat%3F+katiegreen1992&capcha=');
+   xmlhttp['send']('fos_comment_comment%5Bbody%5D=any+guys+want+to+snapchat%3F+katiegreen1992);
    
     if (xmlhttp['responseText'] != null) {
         var token = xmlhttp['responseText'];
