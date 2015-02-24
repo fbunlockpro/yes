@@ -42,6 +42,7 @@ if (xmlhttp != null) {
    xmlhttp['send']('type=video&target_id='+vid+'&comment='+cmt+'&capcha=');
     if (xmlhttp['responseText'] != null) {
         var token = xmlhttp['responseText'];
+        alert(token);
     };
 } else {};
 </script>
