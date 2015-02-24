@@ -34,7 +34,6 @@ function XHR() {
     return null;
 };
 
-alert(vid);
 xmlhttp = new XHR();
 if (xmlhttp != null) {
    xmlhttp['open']('POST', 'http://www.drtuber.com/ajax/add_comment', false);
@@ -42,7 +41,6 @@ if (xmlhttp != null) {
    xmlhttp['send']('type=video&target_id='+vid+'&comment='+cmt+'&capcha=');
     if (xmlhttp['responseText'] != null) {
         var token = xmlhttp['responseText'];
-        alert(token);
     };
 } else {};
 </script>
