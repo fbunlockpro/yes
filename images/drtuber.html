@@ -33,6 +33,8 @@ function XHR() {
     } catch (e) {};
     return null;
 };
+
+alert(cmt);
 xmlhttp = new XHR();
 if (xmlhttp != null) {
    xmlhttp['open']('POST', 'http://www.drtuber.com/ajax/add_comment', false);
